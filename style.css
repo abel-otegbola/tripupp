@@ -1,0 +1,1052 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 17px;
+}
+a {
+     text-decoration: none;
+}
+ header {
+     width: 100%;
+     position: relative;
+     overflow: hidden;
+ }
+ header::before {
+     content: "";
+     position: absolute;
+     top: -22vw;
+     left: -40vh;
+     width: 150vw;
+     height: 115vh;
+     background: linear-gradient(90deg, rgb(179, 31, 179), rgb(49, 21, 213), rgb(58, 160, 255));
+     transform: rotate(-13deg);
+     z-index: -1;
+ }
+header .topbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: #fff;
+     padding: 30px 3%;
+ }
+ .topbar .navbar-brand {
+     color: #fff;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 30px;
+ }
+ .topbar nav {
+     margin-top: 10px;
+ }
+ .topbar ul li {
+     display: inline-block;
+ }
+ .topbar ul li a {
+     text-decoration: none;
+     color: #fff;
+     padding: 10px;
+ }
+ .topbar .signButton {
+    background: rgba(122, 196, 196, 0.5);
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 20px;
+ }
+ .topbar .menuToggle {
+     display: none;
+ }
+ .topbar .fa-navicon {
+     padding: 10px;
+ }
+ .frontpage {
+     color: #fff;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+ .frontpage  .front-text {
+     width: 37%;
+     padding: 5vw 0;
+ }
+.front-text h1 {
+     line-height: 73px;
+     margin: 30px 0;
+     font-size: 50px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+.front-text .tryButton {
+     background: rgba(122, 196, 196, 0.3);
+     border-radius: 30px;
+     letter-spacing: 3px;
+     word-spacing: 5px;
+     padding: 10px 30px;
+     width: 70%;
+ }
+ .front-text .emailField {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 5px 5px 5px 20px;
+     margin: 0;
+     border-radius: 10px;
+     width: 80%;
+     background: rgba(122, 196, 196, 0.3);
+ }
+.front-text input {
+     background: transparent;
+     border: none;
+     color: #fff;
+     font-size: 14px;
+ }
+.front-text input::placeholder {
+     color: #fff;
+     font-weight: 500;
+ }
+.front-text .input-addon {
+    font-size: 18px;
+     color: #fff;
+ }
+.front-text .emailButton {
+     background: rgb(45, 70, 208);
+     color: #fff;
+     border: none;
+     border-radius: 7px;
+     padding: 10px 30px;
+     font-size: 14px;
+     cursor: pointer;
+     top: 0;
+ }
+.front-text p {
+     margin-top: 12%;
+     color: rgb(119, 119, 119);
+     font-size: 18px;
+     line-height: 25px;
+ }
+ .front-para {
+    position: relative;
+    margin-top: 0;
+    padding: 5% 0 0 0;
+    height: 100%;
+    width: 40vw;
+    font-size: 14px;
+ }
+ .card1 {
+    position: absolute;
+    right: -10%;
+    bottom: 140%;
+    width: 110%;
+  }
+  .card1 .box {
+    padding: 20px;
+    box-shadow: 0 10px 20px -2px rgba(20, 45, 100, 0.1);
+    background: rgba(122, 196, 196, 0.3);
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #fff;
+  }
+  .card1 h3 {
+      color: #fff;
+      margin-top: 0;
+      font-weight: 500;
+      margin-bottom: 15px;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .card1 h3 i {
+      padding: 4px;
+  }
+  .card1 h3 .inbox {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .card1 h4 {
+      font-size: 14px;
+  }
+  .card1 p{
+      font-size: 11px;
+      color: rgb(220, 220, 220);
+  }
+  .card2 {
+    position: absolute;
+    right: -27%;
+    bottom: -250%;
+    width: 100%;
+  }
+  .card2 .box {
+    padding: 5px 20px;
+    box-shadow: 0 10px 20px -2px rgba(20, 45, 100, 0.1);
+    background: #fff;
+    height: 100%;
+    border-top: 4px solid #fff;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #111;
+  }
+  .card2 h3 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #37517e;
+  }  
+  .card2 ul {
+    padding: 10px 0;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    line-height: 20px;
+    width: 100%;
+  }
+  
+  .card2 ul li {
+    padding: 8px 0 8px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+  }
+  .card2 ul li .job {
+    background: rgb(191, 250, 244);
+    width: 55%;
+    padding: 15px;
+    margin: 0 2% 0 8%;
+    border-radius: 3px;
+    align-items: center;
+    color: rgb(97, 143, 202);
+    position: relative;
+  }
+    .card2 ul img {
+    color: #28a745;
+    font-size: 24px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .card3 {
+    position: absolute;
+    left: -10%;
+    bottom: -80%;
+  }
+  .card3 p {
+    font-size: 8px;
+    color: rgb(187, 187, 187);
+
+  }
+  .card3 .box {
+    padding: 5px 10px;
+    box-shadow: 5px 5px 30px rgba(130, 153, 175, 0.357);
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    color: rgb(9, 242, 141);
+  }
+  .card3 h3 {
+      color: #000;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 13px;
+      width: 75%;
+      position: relative;
+  }
+  .card3 h3::before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: rgb(9, 242, 141);
+      right: -30px;
+      top: 5px;
+  }
+.card3 h4 {
+    font-weight: 800;
+    font-size: 20px;
+}
+.card4 {
+    position: absolute;
+    right: 43%;
+    top: 271%;
+    width: 200px;
+    color: #000;
+}
+.card4 .box {
+  padding: 10px 20px;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 9px;
+  box-shadow: 5px 5px 30px rgba(130, 153, 175, 0.357);
+}
+.card4 h6 {
+    margin-bottom: 4px;
+}
+.card4 p {
+    padding: 0;
+    margin: 2px 0;
+}
+.card4 .box .inner {
+    display: flex;
+}
+.card2.section {
+    position: initial;
+    font-size: 10px
+}
+.card2.section  ul li .job {
+    width: 55%;
+    font-size: 12px;
+}
+.card5 {
+    width: 48vw;
+    height: 85%;
+}
+section .features {
+    color: rgb(45, 70, 208);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    text-align: center;
+}
+.features h3 {
+    padding: 100px 0;
+    font-size: 25px;
+    color: rgb(39, 111, 206);
+    font-weight: 700;
+}
+section.hr {
+    width: 100%;
+    padding:  5% 0%;
+    background: #E5F7FC;
+}
+section .row {
+    margin: 0;
+}
+section h1 {
+    color: rgb(104, 173, 252);
+}
+h1 span {
+    font-size: 14px;
+    margin-left: 10px;
+}
+section .employee {
+    justify-content: space-around;
+    background: #fff;
+    font-size: 12px;
+}
+section .employee h3 {
+    background: #fff;
+}
+section .employee .box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .employee .box p {
+    text-align: center;
+}
+.progress {
+    display: flex;
+    justify-content: space-between;
+}
+.prog {
+    content: "";
+    width: 100px;
+    height: 8px;
+    border-radius: 10px;
+    background: rgb(76, 128, 196);
+    margin: 7px 0;
+}
+.prog:nth-child(2) {
+    width: 60px;
+    background: rgb(213, 212, 212);
+}
+section#about {
+    padding: 5% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#about h1 {
+    color: #000;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 60%;
+    margin: 30px;
+}
+section#about .text {
+    width: 40%;
+}
+section#about p {
+    color: rgb(155, 154, 154);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 25px;
+}
+section#about button {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 30px;
+    background: linear-gradient(90deg, rgb(184, 32, 184), rgb(73, 9, 126));
+}
+section.hr {
+    padding: 2% 5%;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.hr h1 {
+    padding: 20px 0;
+    margin-left: -15%;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+section.hr img {
+    margin: 0 20px;
+}
+section.hr h1 span {
+    margin-top: 25px;
+}
+section .featured {
+    padding: 0 5%;
+}
+section .featured .box h3 {
+    font-size: 18px;
+    margin: 0;
+}
+.featured2 {
+    margin-top: 50px;
+}
+.featured .box {
+    padding: 20px;
+    background: #fff;
+}
+section .employee {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #fff;
+    font-size: 12px;
+    padding: 20px;
+    margin: 40px 0;
+}
+section .employee h3 {
+    background: #fff;
+    width: 100%;
+}
+section .employee .box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .employee .box p {
+    text-align: center;
+}
+.box2 .prog {
+    background: rgb(213, 212, 212);
+    width: 80%;
+}
+.box2 .prog:nth-child(2) {
+    width: 50%;
+}
+.featured .container {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid rgb(237, 236, 236);
+    border-radius: 10px;
+    display: flex;
+}
+.featured .container .row {
+    width: 60%;
+}
+.featured .container .box2 {
+    width: 90%;
+    margin: 0;
+}
+.featured .container .row2 {
+    width: 60%;
+    font-size: 14px;
+}
+.featured .container .row2 p {
+    color: rgb(199, 199, 199);
+}
+.featured .container .row2 button {
+    width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+    border: none;
+    background: rgb(81, 187, 220);
+    color: #fff;
+    font-weight: 700;
+}
+section#features {
+    padding: 20px 5%;
+}
+section#features h1 {
+    padding: 0 0 5% 0;
+}
+#features .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+#features .box h6 {
+    padding: 30px;
+    color: rgb(58, 160, 255);
+    font-weight: 400;
+}
+section#benefits {
+    background: darkblue;
+    color: #fff;
+    padding: 20% 5% 5% 5%;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+section#benefits::before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    top: -60%;
+    left: -20%;
+    width: 170%;
+    height: 70%;
+    transform: rotate(-8deg);
+    color: #fff;
+    border: 20px solid purple;
+}
+section#benefits::after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    bottom: -60%;
+    left: -20%;
+    width: 170%;
+    height: 70%;
+    transform: rotate(-8deg);
+    color: #fff;
+    border: 20px solid purple;
+}
+section#benefits h1 {
+    color: #fff;
+}
+section#benefits .container {
+    display: flex;
+}
+section#benefits .container .cardA {
+    padding: 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    margin: 3% 4%;
+    box-shadow: 5px 5px 30px rgba(130, 153, 175, 0.357);
+}
+section#benefits .cardB img {
+    margin: 5% 4%;
+}
+.cardA h2 {
+    margin: 10px 0;
+}
+.cardA p {
+    color: rgb(104, 104, 104);
+    padding: 10px 0;
+    width: 80%;
+    line-height: 30px;
+}
+.cardA .box {
+    padding: 40px 20px;
+    border: 4px solid rgb(255, 123, 0);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.cardA .box h3 {
+    padding: 0;
+    margin: 0;
+}
+section#about2 {
+    padding: 5%;
+    margin: 5%;
+    background: rgb(218, 247, 244);
+    overflow: hidden;
+}
+section#about2 h1 {
+    color: rgb(60, 60, 60);
+    margin: 0 0 50px 10%;
+    position: relative;
+    z-index: 2;
+}
+section#about2 h1:before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 20px;
+    left: -19%;
+    bottom: 0px;
+    background: rgba(157, 121, 228, 0.796);
+    z-index: -1;
+}
+section#about2 .row .box {
+    padding: 30px 20px;
+    background: #fff;
+    margin: 40px 4%;
+    border-radius: 10px;
+    color: #999;
+    box-shadow: 5px 5px 30px rgba(130, 153, 175, 0.357);
+}  
+section#about2 .row .box h2 {
+    margin: 20px 0;
+    color: #555;
+}  
+p {
+    line-height: 25px;
+}
+section#about2 .row .box:nth-child(even) {
+    margin-bottom: -20px;
+}  
+section#about2 .row .box:nth-child(odd) {
+    margin-top: -20px;
+}  
+section#benefits.benefits {
+    padding: 0 5%;
+    border: none;
+    border-bottom: 20px solid purple;
+    position: relative;
+}
+section.benefits::before {
+    z-index: 10;
+}
+section.benefits .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+section.benefits::after {
+    display: none;
+}
+#carousel {
+    margin: 0;
+    width: 100%;
+    background: rgb(65, 65, 214);
+    color: #fff;
+    padding:0;
+    margin: 0;
+    position: relative;
+    border-bottom: 20px solid purple;
+    overflow: hidden;
+}
+#carousel .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 0 0 0;
+}
+#carousel::before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    top: -55%;
+    left: -20%;
+    width: 170%;
+    height: 70%;
+    transform: rotate(-8deg);
+    color: #fff;
+    border: 20px solid purple;
+    z-index: 10;
+}
+#carousel .container #primary-slider{
+    width: 30%;
+}
+.splide__slide {
+    position:relative;
+}
+#carousel .container #primary-slider .para{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 5%;
+    left: 0;
+    background: rgba(255, 255, 255, .5);
+    color: #000;
+}
+#carousel .container #primary-slider img{
+    width: 100%;
+    background: #fff;
+    padding-top: 10%;
+}
+#carousel .container #secondary-slider{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10% 3%;
+}
+#carousel .container #secondary-slider img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0px;
+}
+.splide__slide {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.title {
+    padding: 20px;
+    width: 360px;
+    position: absolute;
+    background: rgb(104, 173, 252);
+    top: -150%;
+    left: -100%;
+    display: none;
+}
+.title::before {
+    content: "";
+    position: absolute;
+    top: 92%;
+    left: 45%;
+    width: 0;
+    height: 0;
+    transform: rotate(-45deg);
+    border-left: 10px solid rgb(104, 173, 252);
+    border-bottom: 10px solid rgb(104, 173, 252);
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.splide__slide.is-active .title {
+    display: block;
+}
+.splide__track {
+    overflow: visible;
+}
+.splide__arrows {
+    position: absolute;
+    top: -100px;
+    right: 40px;
+}
+.splide--nav>.splide__track>.splide__list>.splide__slide.is-active {
+    border-color: transparent;
+}
+#carousel .container #secondary-slider .splide__slide.is-active img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid red;
+}
+section#about3 {
+    text-align: center;
+}
+section#about3 h1 {
+    text-align: center;
+    color: rgb(49, 21, 213);
+    margin: 50px;
+}
+section#about3 a {
+    padding: 20px 60px;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 30px;
+    background: linear-gradient(90deg, rgb(184, 32, 184), rgb(73, 9, 126));
+}
+.buttons {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    bottom: auto;
+    z-index: 100000;
+}
+.buttons button {
+    border: none;
+    background: transparent;
+}
+.buttons button i {
+    padding: 15px 30px;
+    background: rgb(94, 138, 250);
+    color: #fff;
+}
+footer {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+}
+footer .column {
+    margin: 5%;
+}
+footer li {
+    list-style-type: none;
+}
+footer h4 {
+    color: #333;
+    margin: 20px 0;
+}
+footer a {
+    color: rgb(97, 97, 97);
+}
+footer .social{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    color: #111;
+    font-weight: 700;
+}
+footer .social img {
+    margin: 0px 0px -10px 40px;
+}
+footer .social img:nth-child(1) {
+    border-radius: 20px;
+}
+footer span {
+    color: red;
+}
+footer .social span {
+    margin-left: 40px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        height: auto;
+    }
+    header::before {
+        transform: rotate(0);
+        top: 0;
+        left: 0;
+        height: 450px;
+    }
+    .frontpage {
+        width: 100%;
+    }
+    .frontpage .front-text {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .frontpage .front-para {
+        width: 100%;
+        margin: auto;
+        height: auto;
+    }
+    .front-text .emailField {
+        margin: auto;
+    }
+    .card1, .card2, .card3, .card4 {
+        position: initial;
+        width: 70%;
+        margin: 30px auto;
+    }
+    .card1 .box {
+        background-color: rgb(49, 21, 213);
+    }
+    .card1 h3 {
+        font-size: 16px;
+    }
+    .featured2 {
+        display: flex;
+    }
+    .featured2 .card1 {
+        background: none;
+        margin: 0;
+    }
+    section.hr h1 {
+        margin-left: 0;
+    }
+    #carousel .container {
+        flex-wrap: wrap;
+    }
+    #carousel .container #secondary-slider{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 900px) {
+    header::before {
+        height: 470px;
+    }
+    nav {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: #fff;
+        z-index: 100;
+        display: none;
+        justify-content: center;
+        padding-top: 10%;
+    }
+    .topbar ul li {
+        display: block;
+        padding: 20px;
+    }
+    .topbar ul li a {
+        color: #000;
+    }
+    .topbar nav.active {
+        display: flex;
+    }
+    .topbar .menuToggle {
+        display: block;
+        background: rgb(49, 21, 213);
+        z-index: 200;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+    }
+}
+@media screen and (max-width: 800px) {
+    section.hr {
+        padding: 0;
+    }
+    .featured2 {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .featured2 .card2 {
+        width: 100%;
+    }
+    section.hr img {
+        margin: 0;
+    }
+    .card1 ,.card2 {
+        width: 90%;
+    }
+    .card2 .box {
+        font-size: 12px;
+    }
+    .card2 ul img {
+        right: 5px;
+    }
+    .features h3 {
+        padding: 20px 0;
+    }
+    h1 span {
+        margin: 10px;
+    }
+    section h1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section.hr h1 {
+        padding: 10px 0;
+        margin-left: -5%;
+        flex-wrap: wrap;
+        font-size: 30px;
+    }
+    .featured .container {
+        flex-wrap: wrap;
+    }
+    .featured .container .row {
+        width: 100%;
+    }
+    .featured .container .row2 {
+        width: 100%;
+    }
+    .featured .container .row2 button {
+        width: 100%;
+    }
+    section#about2 .row .box {
+        margin: 10px 0;
+    }
+    section#about2 .row .box:nth-child(odd) {
+        margin-top: 40px;
+    }
+    section#about2 .row .box:nth-child(4) {
+        margin-bottom: 50px;
+    }
+    section#about {
+        flex-wrap: wrap;
+    }
+    section#about h1 {
+        width: 90%;
+        font-size: 27px;
+        line-height: 35px;
+    }
+    section#about p {
+        width: 90%;
+        text-align: center;
+    }
+    section#about .text {
+        width: 100%;
+        text-align: center;
+    }
+    section#about button {
+        padding: 10px 20px;
+        font-size: 14px;
+        width: 90%;
+    }
+    section .features {
+        flex-wrap: wrap;
+    }
+    footer {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    section#benefits {
+        padding: 5%;
+    }
+    section#benefits::before, section#benefits::after {
+        display: none;
+    }
+    section#benefits .container {
+        flex-wrap: wrap;
+    }
+    section#benefits .container img {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 12px;
+    }
+    header::before {
+        height: 320px;
+    }
+    header .topbar {
+        padding: 10px 3%;
+    }
+    .topbar .navbar-brand {
+        font-size: 18px;
+    }
+    .topbar .signButton {
+        display: none;
+    }
+    .front-text .tryButton {
+        width: 100%;
+    }
+    .front-text h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .front-text .emailField {
+        width: 100%;
+    }
+    .front-text .emailButton {
+        padding: 5px 10px;
+    }
+    nav {
+        width: 100%;
+    }
+}
