@@ -35,10 +35,11 @@ menuButton.addEventListener("click", () => {
 */
 document.addEventListener( 'DOMContentLoaded', function () {
 	var secondarySlider = new Splide( '#secondary-slider', {
-		fixedWidth  : 60,
-		height      : 60,
-		gap         : 10,
+		fixedWidth  : 70,
+		height      : 70,
+		gap         : 70,
 		cover       : false,
+    pagination  : false,
 		isNavigation: true,
 		focus       : 'center',
 	} ).mount();
@@ -46,7 +47,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 	var primarySlider = new Splide( '#primary-slider', {
 		type       : 'fade',
 		pagination : false,
-		arrows     : false,
+		arrows     : true,
 		cover      : false,
 	} ); // do not call mount() here.
 	
