@@ -35,8 +35,8 @@ menuButton.addEventListener("click", () => {
 */
 document.addEventListener( 'DOMContentLoaded', function () {
 	var secondarySlider = new Splide( '#secondary-slider', {
-		fixedWidth  : 120,
-		height      : 120,
+		fixedWidth  : 60,
+		height      : 60,
 		gap         : 10,
 		cover       : false,
 		isNavigation: true,

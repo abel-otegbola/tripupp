@@ -50,6 +50,9 @@ header .topbar {
      color: #fff;
      padding: 10px;
  }
+ .topbar ul li a:hover, .topbar ul li a.active {
+     color: rgb(255, 108, 3);
+ }
  .topbar .signButton {
     background: rgba(122, 196, 196, 0.5);
     color: #fff;
@@ -495,13 +498,13 @@ section .employee .box p {
     color: #fff;
     font-weight: 700;
 }
-section#features {
+section#payroll {
     padding: 20px 5%;
 }
-section#features h1 {
+section#payroll h1 {
     padding: 0 0 5% 0;
 }
-#features .box {
+#payroll .box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -509,7 +512,7 @@ section#features h1 {
     align-content: center;
     padding: 20px;
 }
-#features .box h6 {
+#payroll .box h6 {
     padding: 30px;
     color: rgb(58, 160, 255);
     font-weight: 400;
@@ -753,15 +756,15 @@ section.benefits::after {
     height: 100%;
     border: 3px solid red;
 }
-section#about3 {
+section#work {
     text-align: center;
 }
-section#about3 h1 {
+section#work h1 {
     text-align: center;
     color: rgb(49, 21, 213);
     margin: 50px;
 }
-section#about3 a {
+section#work a {
     padding: 20px 60px;
     border: none;
     border-radius: 40px;
@@ -876,9 +879,27 @@ footer .social span {
     }
     #carousel .container {
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     #carousel .container #secondary-slider{
-        width: 50%;
+        width: 60%;
+        font-size: 13px;
+    }
+    #carousel .container #secondary-slider img{
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+    .title {
+        left: -220%;
+        top: -200%;
+    }
+    .title::before {
+        top: 89%;
+    }
+    .splide__arrows {
+        top: -10px;
+        right: 40px;
     }
 }
 @media screen and (max-width: 900px) {
@@ -1016,6 +1037,9 @@ footer .social span {
     section#benefits .container img {
         width: 90%;
     }
+    #carousel::before {
+        display: none;
+    }
 }
 @media screen and (max-width: 400px) {
     body {
@@ -1048,5 +1072,30 @@ footer .social span {
     }
     nav {
         width: 100%;
+    }
+    #carousel .container {
+        padding: 20px 0;
+    }
+    #carousel .container #secondary-slider{
+        width: 70%;
+        padding: 120px 10px;
+        margin: auto;
+    }
+    #carousel .container #secondary-slider img{
+        width: 60%;
+        height: auto;
+        margin: auto;
+    }
+    #carousel .container #primary-slider{
+        width: 100%;
+        padding-top: 0;
+    }
+    #carousel .container #primary-slider img{
+        width: 80%;
+        height: auto;
+        margin: 10%;
+    }
+    #carousel .container .splide__arrows {
+        display: none;
     }
 }
